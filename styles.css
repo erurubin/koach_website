@@ -1,0 +1,142 @@
+body {
+    background-color: #141414;
+  
+    overflow-x: hidden;
+  }
+  
+  
+
+
+  
+
+
+
+ 
+
+.background-container {
+  background-image: url('https://www.beinharimtours.com/wwwroot/uploads/articles/422/c2433de5-7e48-45fb-85c6-c0a111ea185e.jpg');  /* Replace with your image path */
+  background-size: cover;  /* This will make sure the image covers the entire container */
+  background-position: center;  /* Centers the image */
+  background-repeat: no-repeat;  /* Makes sure the image doesn't repeat */
+  height: 100vh;  /* This makes the container take the entire viewport height */
+  width: 100%;  /* Makes sure the container takes the full width of the viewport */
+  position: relative; 
+}
+
+.ag-timeline_title-box {
+  padding: 0 0 30px;
+  text-align: center;
+  
+  position: absolute;
+  top: 270px;       /* added 'px' */
+  left: 150px; 
+} 
+
+
+
+.title{
+  font-family: 'Cinzel', monospace;
+  font-size: 200px;
+  color: rgba(255, 255, 255, 0.9);
+  text-align: left;
+  margin-top: -140px; /* Move it up by 50px */
+}
+
+.sub_title {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 50px;
+  font-family: 'Cinzel', monospace;
+}
+
+  .down-arrow {
+    position: absolute;
+    top: calc(95vh - 15px); /* Adjusted to position the arrow's center at the bottom */
+    left: 50%;
+    transform: translateX(-50%); /* Only translate horizontally */
+    width: 0;
+    height: 30px;
+    border: 2px solid;
+    border-radius: 2px;
+    animation: jumpInfinite 3.5s infinite;
+    display: inline-block;
+}
+  
+.down-arrow:after {
+    content: " ";
+    position: absolute;
+    top: 12px;
+    left: -10px;
+    width: 16px;
+    height: 16px;
+    border-bottom: 4px solid;
+    border-right: 4px solid;
+    border-radius: 4px;
+    transform: rotateZ(45deg);
+}
+  
+@keyframes jumpInfinite {
+    0% {
+      margin-top: 0;
+    }
+    50% {
+      margin-top: 10px;
+    }
+    100% {
+      margin-top: 0;
+    }
+}
+
+
+.anchor-container {
+  position: absolute;
+  top: 10px; /* Adjust as needed for alignment */
+  left: 50%; /* Center container horizontally */
+  transform: translateX(-50%); /* Center offset */
+  z-index: 10;
+  display: flex;
+  gap: 30px; /* Space between items */
+}
+
+.menu-button {
+  background: none; /* No background for buttons */
+  border: none; /* Remove button borders */
+  color: white; /* White text */
+  font-family: 'Cinzel', sans-serif; /* Match font from screenshot */
+  font-size: 14px; /* Adjust font size to match screenshot */
+  font-weight: bold; /* Bold text */
+  cursor: pointer;
+  padding: 0; /* No padding */
+  margin: 0; /* No margin */
+
+}
+
+.menu-button:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.header-line {
+  position: absolute;
+  top: 40px; /* Position it right below the header */
+  width: 100%; /* Full width of the screen */
+  height: 0.5px; /* Thin line */
+  background-color:  rgba(255, 255, 255, 0.7); /* White color */
+  z-index: 5; /* Ensure it sits below the content */
+}
+
+
+
+.icon-container {
+  position: absolute;
+  top: 60px; /* Adjust to set distance from the top */
+  right: 30px; /* Adjust to set distance from the right */
+  z-index: 15; /* Make sure it appears above other elements */
+}
+
+.top-right-icon {
+  width: 200px; /* Adjust the size of your icon */
+  height: auto; /* Maintain aspect ratio */
+  cursor: pointer; /* Optional: Add a pointer cursor for interactivity */
+}
+
+
+  
